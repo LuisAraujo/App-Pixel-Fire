@@ -1,0 +1,23 @@
+{
+  "name": "Pixel Fire",
+  "version": "1.1",
+  "description": "App for paint in pixel art for Firefox Os.  Particularity of app: * Paint in pixel art. * Predefined and custom color with rgb value. * Saves file for edit after. * Saves file in png format.",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Luis Araujo",
+    "url": "https://github.com/LuisAraujo/"
+  },
+  "permissions": {
+    "device-storage:pictures": {
+      "description": "Required to save images png",
+      "access": "readwrite"
+    }
+  },
+  "icons": {
+    "60": "/icons/icon_60.png",
+    "128": "/icons/icon_128.png"
+  },
+  "fullscreen": "true",
+  "type": "privileged",
+  "default_locale": "en"
+}

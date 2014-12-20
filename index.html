@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pixel Fire</title>
+		<link rel='stylesheet' type='text/css' href='css/style.css' />
+        <link rel="stylesheet" href="css/colpick.css" type="text/css"/>
+		<script  src="js/jquery-1.10.2.min.js"></script>
+        <script defer src="js/functions.js"></script>
+		<script defer src="js/app.js"></script>
+		<script defer src="js/bd.js"></script>
+        <script  src="js/app_init.js"></script>
+		<script src="js/colpick.js"></script>
+
+    </head>
+    <body id='body' app='firepixel'>
+	   
+	   <!-- screen lock -->
+	   <div id='block_display'  >
+			<div id='close' style='position:absolute; right:10; top:5;' >
+			  <img src='img/close.png'>
+			</div>
+		</div>
+			
+		<div id='app'>
+	
+			<!-- menu-->
+			<div id='ct_menu' class='conteiner' style="display:block; background-image:url('img/bg_main.png'); height:480px;">
+				
+				
+				<div style='position:absolute; top:250px; width:320px;'>
+					<div style='float:left; margin-left:70px; width: 100px'>
+						<img id='bt_newfile' style='margin-left:-10px; margin-top:10px;' src='img/new_b.png'>
+					</div>
+		
+					<div style='float:left; margin-left:20px; width: 100px'>
+						<img id='bt_openfile' style='margin-left:5px; margin-top:10px;' src='img/open.png'>
+					</div>
+				</div>
+			</div>
+
+			<!-- screen editor -->
+			<div id='ct_editor2' style='display:none'>
+				<div style='display:none id='ct_editor' class='conteiner'>
+					<div class='linha' id='l1'>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>	
+						<div class='pixel'></div>						
+					</div>
+					<div class='linha' id='l2'>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>	
+						<div class='pixel'></div>						
+					</div>
+					<div class='linha' id='l3'>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>	
+						<div class='pixel'></div>						
+					</div>
+					<div class='linha' id='l4'>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>	
+						<div class='pixel'></div>						
+					</div>
+					<div class='linha' id='l5'>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>	
+						<div class='pixel'></div>		
+					</div>
+					<div class='linha' id='l6'>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>	
+						<div class='pixel'></div>							
+					</div>
+					<div class='linha' id='l7'>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>	
+						<div class='pixel'></div>				
+					</div>
+					<div class='linha' id='l8'>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>	
+						<div class='pixel'></div>						
+					</div>
+					<div class='linha' id='l9'>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>	
+						<div class='pixel'></div>						
+					</div>
+					<div class='linha' id='l10'>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>	
+						<div class='pixel'></div>						
+					</div>
+					<div class='linha' id='l11'>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>	
+						<div class='pixel'></div>						
+					</div>
+					<div class='linha' id='l12'>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>	
+						<div class='pixel'></div>						
+					</div>
+					<div class='linha' id='l13'>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>	
+						<div class='pixel'></div>					
+					</div>
+					<div class='linha' id='l14'>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>
+						<div class='pixel'></div>	
+						<div class='pixel'></div>						
+					</div>
+				</div>
+				
+				<!-- show current color -->
+				<div id='colorselected' ></div>
+				
+				<!-- bar tool of scree of drawing--->
+				<div id='menu_tool' style=''>
+					<div class='floating'>			
+						<div id='pencel' class='button' >
+							<image src='img/pencil.png'>
+						</div>
+						<div id='eraser' class='button'>
+							<image src='img/eraser.png'>
+						</div>
+						<div id='color' class='button'>
+							<image src='img/color.png'>
+						</div>
+						<div id='bt_save' class='button' >
+							<image src='img/save.png'>
+						</div>
+						<div id='bt_new' class='button'>
+							<image src='img/new.png'>
+						</div>
+						<div id='bt_menu' class='button'>
+							<image src='img/menu.png'>
+						</div>				
+					</div>
+			 </div>
+
+			 <!-- sign of pencil activated or eraser activated-->
+			   <div id='sign_menu_tool' class='floating'>
+						<div style='background: rgba(0, 255,0, 0.5);' id='sing_pencel'  class='sing' >
+						</div>
+						<div id='sing_eraser'  class='sing' >
+						</div>
+				</div>	
+				
+				<div style='' id='palheta'>	
+				    <span style='font-size:20px; margin-left:40px'>Select Color</span>
+					<div id="picker"></div>
+					<button id='bt_ok_selectcolor' style=' '>Ok</button>	
+				</div>
+				
+			</div>
+		
+			
+			
+		<!-- save -->
+			<div id='ct_save'>
+				<!-- Name<input value='image'  type='text' id='filename'><br> -->
+				<div class='floating'>
+					<button id='save'> Save</button>
+					<button id='down'>Save as PNG</button>
+				</div>
+				<img src ='' id='image'></img><br>	
+			</div>
+	
+		<!-- message -->
+			<div id='ct_msg' style=''>
+				<div id='msg_sus'>
+					<img src='img/ok.png'>
+					 File Saved!
+					 
+				</div>
+				<div id='msg_err'>
+					<img src='img/erro.png'>
+					Error!  Try change name of your file.
+				</div>
+				
+				<iframe src='http://luisaraujo.site90.net/app/index.html' style="border:none; height:80px; display:block; width:250px; margin-left:30px; padding-top: 100px"></iframe>
+			</div>
+			
+			<div id='list_files' style='display: none'>
+			</div>
+			
+    </body>
+</html>
